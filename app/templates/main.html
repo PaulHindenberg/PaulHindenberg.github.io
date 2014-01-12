@@ -1,0 +1,57 @@
+<div class="row" style="padding-top: 45px;" name="top">
+    <div class="col-lg-3">
+        <img src="{{me.logoUrl}}" alt="ph. Logo" style="padding-top: 43px; padding-left: 24px;"/>
+    </div>
+    <div class="col-lg-4" style="padding-top: 40px; padding-left: 28px;">
+        <h1>{{me.name}}</h1>
+        <h2>
+            <span>{{me.jobTitle}}</span><br/>
+            <a href="mailto:{{me.email}}">{{me.email}}</a>
+        </h2>
+    </div>
+    <div class="col-lg-5">
+        <img src="{{me.imgUrl}}" class="bigImg" alt="me"/>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-2">&nbsp;</div>
+    <div class="col-lg-5">
+        <p style="font-family: sarif;">Hi,<br> I'm Paul and currently studying Information Management and Consulting (MSc.) in Ludwigshafen am Rhein, University of Applied Science, based in Germany. As Freelancer, I use my knowledge in different projects, mostly as Application Developer or/and Consultant.<br><br> This Website will be mostly used to keep track of my doings. So, if you want to know more details, about me or my work, feel free to have a look. <br>In case you have any questions, please feel free to contact me via any platform.</p>
+    </div>
+    <div class="col-lg-5">
+        <ul class="skillUl">
+            <li ng-repeat="skill in me.skills">{{skill.text}}</li>
+        </ul>
+    </div>
+
+</div>
+
+<a name="projects"></a>
+<div class="row">
+    <h2 style=" margin-bottom:20px; text-align:right; float:right; border-bottom: 6px solid; color: #1d7ccc; width: 290px; font: bold 20px/50px 'Oswald'">PROJECTS.</h2>
+    <div class="col-lg-12 glassBox" style="margin-bottom: 20px;" ng-repeat="project in projects">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <h4>{{project.name}}
+                    <span style="font-size: 16px; font-style: italic;"> <span ng-show="project.url !== ''" ng-click="openUrl(project.url)" class="glyphicon glyphicon-new-window" style="cursor: pointer;"></span>  ({{project.date}})</span>
+                </h4>
+
+                <p ng-show="project.employer !== ''">Employer: {{project.employer}}  <span ng-show="project.employerUrl !== ''" ng-click="openUrl(project.employerUrl)" class="glyphicon glyphicon-new-window" style="cursor: pointer;"></span></p>
+                <p ng-show="project.client !== ''">Client: {{project.client}}  <span ng-show="project.clientUrl !== ''" ng-click="openUrl(project.clientUrl)" class="glyphicon glyphicon-new-window" style="cursor: pointer;"></span></p>
+            </div>
+
+        </div>
+        <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div class="col-lg-4">
+                <img src="{{project.imgUrl}}" alt="ProjectImage"/>
+            </div>
+            <div class="col-lg-8">
+                <p>{{project.text}}</p><br/>
+                <p><strong>Used Languages:</strong> <span ng-repeat="language in project.languages">{{language.name}} </span></p>
+                <p><strong>Used Technologies:</strong> <span ng-repeat="tech in project.techs">{{tech.name}} </span></p>
+            </div>
+        </div>
+    </div>
+</div>
