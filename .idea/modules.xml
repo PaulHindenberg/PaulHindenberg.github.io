@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/hindenberg.iml" filepath="$PROJECT_DIR$/.idea/hindenberg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ngHindenberg.iml" filepath="$PROJECT_DIR$/.idea/ngHindenberg.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,190 @@
+<div class="row">
+    <div class="col-lg-9 col-lg-offset-3 spacer-bot-15">
+            <div style="background-color: #1d7ccc; float:left; cursor:pointer; width: 225px; height: 60px; color: #ffffff; display:table; text-align: center;" ng-click="download(0)">
+                <span style="display: table-cell; font-size:large; vertical-align: middle;">Download Lebenslauf <br/>(German)</span>
+            </div>
+
+            <div style="margin-right:5px; margin-left:5px; background-color: #1d7ccc; float:left; cursor:pointer; width: 225px; height: 60px; color: #ffffff; display:table; text-align: center;" ng-click="download(1)">
+                <span style="display: table-cell; font-size:large; vertical-align: middle;">Download CV <br/>(English)</span>
+            </div>
+
+            <div style="background-color: #1d7ccc; cursor:pointer; width: 225px; height: 60px; color: #ffffff; display:table; text-align: center;" ng-click="download(2)">
+                <span style="display: table-cell; font-size:large; vertical-align: middle;">Download Project Summary</span>
+            </div>
+    </div>
+</div>
+
+<div class="row">
+    <h3 class="underline">PERSONAL DETAILS.</h3>
+    <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="col-lg-3 col-md-3">
+            <span style="line-height: 30px;">Date of Birth</span>
+        </div>
+        <div class="col-lg-9 col-md-9 spacer-bot-15">
+            <span style="line-height: 30px;">Jan 23rd 1988</span>
+        </div>
+    </div>
+
+    <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="col-lg-3 col-md-3">
+            <span style="line-height: 30px;">Nationality</span>
+        </div>
+        <div class="col-lg-9 col-md-9 spacer-bot-15">
+            <span style="line-height: 30px;">German</span>
+        </div>
+    </div>
+
+    <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="col-lg-3 col-md-3">
+            <span style="line-height: 30px;">Personal Status</span>
+        </div>
+        <div class="col-lg-9 col-md-9 spacer-bot-15">
+            <span style="line-height: 30px;">Unmarried, 0 Children</span>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <h3 class="underline">EDUCATION.</h3>
+    <!--<div class="col-lg-12">-->
+        <!--<span class="educationHeadline">Fachhochschule Brandenburg</span><span> - University of Applied Science<br/></span>-->
+        <!--<span>Bachelor of Science in Business Informatics (Wirtschaftsinformatik), Sept 2008 - August 2011 <br/><br/>-->
+        <!--Thesis: <br/>-->
+        <!--"Comparison of Cross-Platform Development Frameworks for Multi-Device-Applications" (Grade 1.5)</span>-->
+    <!--</div>-->
+    <div class="col-lg-3 col-md-3">
+        <span style="line-height: 30px;">Since Sept 2012</span>
+    </div>
+    <div class="col-lg-9 col-md-9 spacer-bot-15">
+        <span class="aboutHeadline">Hochschule Ludwigshafen am Rhein</span><br/>
+        <span>Master of Science in Information Management and Consulting (Wirtschaftsinformatik mit SP InfoMaC)<br/><br/>
+        Thesis:
+        "Exposition and Evaluation of Software Architectures and Security Concepts for Smart Grid Applications"
+         <br/> <br/> Expected date of completion: Oct 2014</span>
+    </div>
+
+    <div class="col-lg-3 col-md-3">
+        <span style="line-height: 30px;">Sept 2008 - Aug 2011</span>
+    </div>
+    <div class="col-lg-9 col-md-9 spacer-bot-15">
+        <span class="aboutHeadline">Fachhochschule Brandenburg</span><span> - University of Applied Science<br/></span>
+        <span>Bachelor of Science in Business Informatics (Wirtschaftsinformatik)<br/><br/>
+        Thesis:
+        "Comparison of Cross-Platform Development Frameworks for Multi-Device-Applications" (Grade 1.5)</span>
+    </div>
+
+    <div class="col-lg-3 col-md-3">
+        <span style="line-height: 30px;">August 2011</span>
+    </div>
+    <div class="col-lg-9 col-md-9">
+        <span class="educationHeadline">Bachelor of Science (Final Grade: 1.7)</span>
+    </div>
+</div>
+
+<div class="row" style="padding-top: 30px;">
+    <h3 class="underline">WORK EXPERIENCE.</h3>
+    <div class="row" ng-repeat="work in workExp" style="margin-left: auto; margin-right: auto;">
+        <div class="col-lg-3 col-md-3">
+            <span style="line-height: 30px;">{{work.date}}</span>
+            <!--<div style="width: 100%; text-align: center;">-->
+                <!--<img src="{{work.employerImgUrl}}" alt="" style="width: 75%;"/>-->
+            <!--</div>-->
+        </div>
+        <div class="col-lg-9 col-md-9 spacer-bot-15" >
+            <span class="aboutHeadline">{{work.employer}}</span><span> - {{work.location}}</span><br/>
+            <span>{{work.job}}</span>
+            <ul class="workUl">
+                <li ng-repeat="desc in work.descr">{{desc}}</li>
+                <li ng-show="work.hasProjects">For all projects see <a ng-href="#/work">Work</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="padding-top: 30px;">
+    <h3 class="underline">OTHER.</h3>
+    <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="col-lg-3 col-md-3">
+            <span style="line-height: 30px;">Oct 2007 - Sept 2008</span>
+        </div>
+        <div class="col-lg-9 col-md-9 spacer-bot-15" >
+            <span class="aboutHeadline">Bundeswehr (German Armed Forces)</span><span> - Torgelow, Germany</span><br/>
+            <span>Basic Military Service</span>
+            <ul class="workUl">
+                <li>9 month basic military service + 2 month reserve</li>
+                <li>Human Resources Assistant</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="col-lg-3 col-md-3">
+            <span style="line-height: 30px;">Apr 2010 - Apr 2011</span>
+        </div>
+        <div class="col-lg-9 col-md-3 spacer-bot-15" >
+            <span class="aboutHeadline">Examination Board</span><span> - Fachhochschule Brandenburg</span><br/>
+            <span>Member of the board for the Economy Faculty</span>
+        </div>
+    </div>
+    <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="col-lg-3 col-md-3">
+            <span style="line-height: 30px;">Sept 2011 - Aug 2012</span>
+        </div>
+        <div class="col-lg-9 col-md-9 spacer-bot-15" >
+            <span class="aboutHeadline">Stay abroad</span><span> - Vancouver, BC, Canada</span><br/>
+            <span>Working Holiday Visa Canada</span>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="padding-top: 30px;">
+    <h3 class="underline">CERTIFICATES.</h3>
+    <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="col-lg-3 col-md-3">
+            <span style="line-height: 30px;"></span>
+        </div>
+        <div class="col-lg-9 col-md-9 spacer-bot-15" >
+            <ul class="workUl">
+                <li ng-repeat="cert in certs">{{cert}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="padding-top: 30px;">
+    <h3 class="underline">LANGUAGES.</h3>
+    <div class="row" ng-repeat="language in languages" style="margin-left: auto; margin-right: auto;">
+        <div class="col-lg-3 col-md-3">
+            <span style="line-height: 30px;">{{language.language}}</span>
+        </div>
+        <div class="col-lg-9 col-md-9 spacer-bot-15" >
+            <span>{{language.skill}}</span>
+        </div>
+    </div>
+</div>
+<div class="row" style="padding-top: 30px;">
+    <h3 class="underline">SKILLS AND CAPABILITIES.</h3>
+    <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="col-lg-3 col-md-3">
+            <span style="line-height: 30px;">Programming</span>
+        </div>
+        <div class="col-lg-9 col-md-9 spacer-bot-15" >
+            <span style="line-height: 30px;" ng-repeat="skill in skills.prog">{{skill}}, </span>
+        </div>
+    </div>
+    <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="col-lg-3 col-md-3">
+            <span style="line-height: 30px;">Methods and Tools</span>
+        </div>
+        <div class="col-lg-9 col-md-9 spacer-bot-15" >
+            <span style="line-height: 30px;" ng-repeat="tool in skills.tools">{{tool}}, </span>
+        </div>
+    </div>
+    <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="col-lg-3 col-md-3">
+            <span style="line-height: 30px;">SAP Modules</span>
+        </div>
+        <div class="col-lg-9 col-md-9 spacer-bot-15" >
+            <span style="line-height: 30px;" ng-repeat="mod in skills.sap">{{mod}}, </span>
+        </div>
+    </div>
+</div>
