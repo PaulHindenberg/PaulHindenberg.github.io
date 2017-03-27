@@ -231,13 +231,16 @@ angular.module('app')
                 ]
             }
         ];
-        var me = {name: 'Paul Hindenberg', jobTitle:'SPA Developer & Consultant', email:'Paul.Hindenberg@gambit.de',imgUrl:'app/img/mainpic-v2.png', logoUrl:'app/img/logo_big.png',
+        var me = {name: 'Paul Hindenberg', jobTitle:'SPA Developer & Consultant', email:'Hindenberg.gs@gmail.com',imgUrl:'app/img/mainpic-v2.png', logoUrl:'app/img/logo_big.png',
             welcomeTxt:"Hello and welcome,<br> I'm Paul and currently living between between Cologne and Bonn where I'm employed at Gambit Consulting. \n "
             + "Here I'm working mostly as an (not only :)) SAP developer as well as technical Consultant on various projects. "
-            + "Before getting here I was studying Information Management and Consulting (MSc.) in Ludwigshafen am Rhein, University of Applied Science, based in Germany. As Freelancer, I was using my knowledge in different projects, mostly as Application Developer or/and Consultant.\n\n I mostly use this Webpage to keep track of my doings. So if You want to know more details, about me or my work, feel free to have a look.",
+            + "Before getting here I was studying Information Management and Consulting (MSc.) in Ludwigshafen am Rhein, University of Applied Science, based in Germany. "
+            + "As Freelancer, I was using my knowledge in different projects, mostly as Application Developer or/and Consultant.\n\n I mostly use this Webpage to keep track of my doings. So if You want to know more details, about me or my work, feel free to have a look.",
             skills:[
                 {text:'Individual Software Development'},
+                {text:'Interested in IoT, Big Data, Real Time Applications and other fancy projects'},
                 {text:'var. ABAP Development'},
+                {text:'Mass Data Analytics with Hadoop Ecosystem'},                
                 {text:'SPA Development with AngularJS, Vue, NodeJS, Flex, Java, PHP, ..'},
                 {text:'Multi Media Development with Wowza Media Server'},
                 {text:'DBs: mySQL, sqlite, mongoDB, redis, SAP HANA'},
