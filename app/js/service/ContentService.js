@@ -231,19 +231,25 @@ angular.module('app')
                 ]
             }
         ];
-        var me = {name: 'Paul Hindenberg', jobTitle:'SPA Developer & Consultant', email:'contact_Paul@Hindenberg.de',imgUrl:'app/img/mainpic-v2.png', logoUrl:'app/img/logo_big.png',
-            welcomeTxt:"Hi,<br> I'm Paul and currently studying Information Management and Consulting (MSc.) in Ludwigshafen am Rhein, University of Applied Science, based in Germany. As Freelancer, I use my knowledge in different projects, mostly as Application Developer or/and Consultant.\n\n I mostly use this Webpage to keep track of my doings. So if You want to know more details, about me or my work, feel free to have a look.",
+        var me = {name: 'Paul Hindenberg', jobTitle:'SPA Developer & Consultant', email:'Paul.Hindenberg@gambit.de',imgUrl:'app/img/mainpic-v2.png', logoUrl:'app/img/logo_big.png',
+            welcomeTxt:"Hello and welcome,<br> I'm Paul and currently living between between Cologne and Bonn where I'm employed at Gambit Consulting. \n "
+            + "Here I'm working mostly as an (not only :)) SAP developer as well as technical Consultant on various projects. "
+            + "Before getting here I was studying Information Management and Consulting (MSc.) in Ludwigshafen am Rhein, University of Applied Science, based in Germany. As Freelancer, I was using my knowledge in different projects, mostly as Application Developer or/and Consultant.\n\n I mostly use this Webpage to keep track of my doings. So if You want to know more details, about me or my work, feel free to have a look.",
             skills:[
                 {text:'Individual Software Development'},
-                {text:'SPA Development with AngularJS, Flex, Java, PHP, ..'},
+                {text:'var. ABAP Development'},
+                {text:'SPA Development with AngularJS, Vue, NodeJS, Flex, Java, PHP, ..'},
                 {text:'Multi Media Development with Wowza Media Server'},
-                {text:'DBs: mySQL, sqlite, mongoDB, SAP HANA (first exp.)'},
-                {text:'Mobile App Development with Phonegap and Adobe AIR'},
-                {text:'Projectmanagement'},
-                {text:'Business Processes: (E)EPK, BPMN, KSA'},
-                {text:'Basic Knowledge in various SAP Modules'}
+                {text:'DBs: mySQL, sqlite, mongoDB, redis, SAP HANA'},
+                {text:'Hybrid App Development with Cordova, Ionic or Adobe AIR'},
+                {text:'Project-Management'},
+                {text:'Business Processes: (E)EPK, BPMN, KSA'}
             ]};
         var employments = [
+            {employer:'Gambit Consulting', employerUrl:'http://www.gambit.de', employerImgUrl:'https://www.gambit.de/wp-content/uploads/2016/10/gambit_logo.png', date:'Nov 2014 - today',location:'Troisdorf, Germany',
+                job:'IT and SAP Consultant', hasProjects:true,
+                descr:['Working on various SAP and non SAP projects as technical consultant and developer']
+            },
             {employer:'Hochschule Ludwigshafen am Rhein', employerUrl:'http://hs-lu.de', employerImgUrl:'', date:'March 2014', location:'Ludwigshafen am Rhein, Germany',
             job:'Lecturer of a Crash Course in SW Modeling and Databases', hasProjects:false,
             descr:['Lecturing a 5d week with 8h/day','Course Participants: Economic Students who want to start their IT Master studies, no/little prior knowledge']
@@ -276,10 +282,15 @@ angular.module('app')
 
 
         ];
-        var languages = [{language: 'German',skill:'First language'},{language: 'English',skill:'Business fluent'},{language: 'French',skill:'Basics'}]
-        var skills = {  prog:['OOP', 'OOAD', 'Java', 'Hibernate', 'SQL', 'Actionscript 3', 'MXML', 'Adobe/Apache Flex (3+4)', 'Adobe AIR', 'Eclipse RCP', 'JFace', 'PHP', 'HTML', 'CSS', 'JS', 'AngularJS', 'Bootstrap', 'Ionicframework', 'Cordova/Phonegap', 'jQuery', 'JSON', 'Coldfusion 10', 'XML'],
-                        tools:['mySQL', 'MongoDB', 'Oracle', 'DB-Modelling', 'UML', 'Scrum', 'Jira', 'Hudson/Jenkins CI', 'MS Office', 'Project- & Team Management', 'BPMN', 'KSA', 'Systemanalysis','Process Modelling & -Optimisation','Mura CMS', 'Typo3'],
-                        sap:['SD', 'MM', 'PP', 'FI', 'CO', 'PS']};
+
+        var interests = ['Real Time Applications', 'IoT', 'Big Data'];
+
+        var languages = [{language: 'German',skill:'First language'},{language: 'English',skill:'Business fluent'},{language: 'French',skill:'Basics'}];
+
+        var skills = {  prog:['ABAP (Objects)', 'Deepstream (Hub)', 'SAPUI5 / openUI5', 'SAP Fiori', 'oData', 'JSON', 'Apache Hive', 'NodeJS', 'Vue 2 + Vuex', 'HTML', 'CSS', 'JS', 'AngularJS', 'Bootstrap', 'Ionicframework', 'Cordova/Phonegap', 'jQuery', 'SOAP', 'OOP', 'OOAD', 'PHP', 'Java', 'Hibernate', 'SQL', 'Actionscript 3', 'MXML', 'Adobe/Apache Flex (3+4)', 'Adobe AIR', 'Eclipse RCP', 'JFace', 'Coldfusion 10', 'XML'],                        
+                        tools:['SAP Gateway', 'SAP Cloud Platform', 'SAP Hybris', 'Apache Hadoop', 'mySQL', 'MongoDB', 'Oracle', 'DB-Modelling', 'UML', 'Scrum', 'Jira', 'Hudson/Jenkins CI', 'MS Office', 'Project- & Team Management', 'BPMN', 'KSA', 'Systemanalysis','Process Modelling & -Optimisation','Mura CMS', 'Typo3'],
+                        sap:['Landscape Transformation', 'SAP NetWeaver', 'ABAP (Objects)', 'SAPUI5 / openUI5', 'SAP Fiori', 'SAP Gateway']
+                    };
         var courses = { fhb:[
                             {sem:'1. Semester', courses:['Grundlagen und Wirkungen der Wirtschaftsinformatik', 'Algorithmen und Datenstrukturen','Systemanalyse','Datenbanken - Anwendung und Entwicklung', 'Grundlagen der Wirtschafts- und Finanzmathematik', 'Grundlagen der Betriebswirtschaftslehre']},
                             {sem:'2. Semester', courses:['Objektorientierter Systementwurf', 'Datenbank - Modellierung und Strukturierung', 'Grundlagen der Prozessmodellierung', 'Grundlagen statistischer Methoden', 'Rechnungswesen und Buchf&uuml;hrung', 'Englisch anwenden in der Wirtschaftsinformatik']},
@@ -294,7 +305,7 @@ angular.module('app')
                             {sem:'4. Semester', courses:['Master Thesis, Thema: [Darstellung und Wertung von Softwarearchitekturen und Sicherheitskonzepten f&uuml;r Smart Grid Anwendungen]']}
                         ]
                         }
-        var certificates = ['MongoDB for Developers (M101 by 10gen)'];
+        var certificates = ['SAP Landscape Transformation Associate','MongoDB for Developers (M101 by 10gen)'];
 
         return{
             getMe: function(){
@@ -317,6 +328,9 @@ angular.module('app')
             },
             getCourses: function(){
                 return courses;
+            },
+            getInterests: function(){
+                return interests;
             }
         }
 
