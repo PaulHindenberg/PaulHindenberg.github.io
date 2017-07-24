@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <title>Paul Hindenberg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +8,7 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="vendor/css/foundation.min.css"/>
+    <link rel="stylesheet" href="vendor/css/foundation.min.css" />
     <link rel="stylesheet" href="app/css/style.css" type="text/css" media="screen" />
     <link href="favicon.png" type="image/png" rel="icon" />
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
@@ -21,60 +22,64 @@
     </style>
     <![endif]-->
 </head>
+
 <body>
-<nav class="navbar navbar-fixed-top myNavBar" role="navigation">
-    <div class="container" style="padding-top: 35px; padding-bottom: 10px; padding-right:66px; padding-left: 94px;" scroll-position="scroll">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <a href="#" id="nameLogo" ng-class="{iconNotVisible: isActive('main') && scroll<186}"><img src="app/img/logo2.png" width="207" height="50" alt="logo" style="padding-left:10px;"/></a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <nav class="navbar navbar-fixed-top myNavBar" role="navigation">
+        <div class="container" style="padding-top: 35px; padding-bottom: 10px; padding-right:66px; padding-left: 94px;" scroll-position="scroll">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a href="#" id="nameLogo" ng-class="{iconNotVisible: isActive('main') && scroll<186}"><img src="app/img/logo2.png" width="207" height="50" alt="logo" style="padding-left:10px;"/></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-        </div>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a ng-class="{current: isActive('main')}" ng-href="#">Main</a></li>
-                <li><a ng-class="{current: isActive('about')}" ng-href="#/about">About</a></li>
-                <li><a ng-class="{current: isActive('work')}" ng-href="#/work">Work</a></li>
-                <li><a ng-class="{current: isActive('contact')}" ng-href="#/contact">Contact</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-<!--start container-->
-<div class="container content" ui-view></div>
-<div id="footer">
-    <div class="container">
-        <div class="row" style="padding-top: 10px;">
-            <div class="col-lg-4 col-md-4">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a ng-class="{current: isActive('main')}" ng-href="#">Main</a></li>
+                    <li><a ng-class="{current: isActive('about')}" ng-href="#/about">About</a></li>
+                    <li><a ng-class="{current: isActive('work')}" ng-href="#/work">Work</a></li>
+                    <li><a ng-class="{current: isActive('contact')}" ng-href="#/contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="col-lg-4 col-md-4">
-                <p style="font-size: 14px;">&#169; Paul Hindenberg 2014</p>
-            </div>
-            <div class="col-lg-4 col-md-4">
-                <p style="font-size: 14px;">Built with AngularJS and Bootstrap3</p>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!--start container-->
+    <div class="container content" ui-view></div>
+    <div id="footer">
+        <div class="container">
+            <div class="row" style="padding-top: 10px;">
+                <div class="col-lg-4 col-md-4">
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <p style="font-size: 14px;">&#169; Paul Hindenberg 2014 - 2017</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <p style="font-size: 14px;">Built with AngularJS and Bootstrap3</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<script typ="text/javascript" src="vendor/js/jQuery.min.js"></script>
-<script typ="text/javascript" src="vendor/js/angular.min.js"></script>
-<script typ="text/javascript" src="vendor/js/angular-ui-router.js"></script>
-<script typ="text/javascript" src="vendor/js/angular-sanitize.js"></script>
-<script typ="text/javascript" src="vendor/js/underscore.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script typ="text/javascript" src="vendor/js/jQuery.min.js"></script>
+    <script typ="text/javascript" src="vendor/js/angular.min.js"></script>
+    <script typ="text/javascript" src="vendor/js/angular-ui-router.js"></script>
+    <script typ="text/javascript" src="vendor/js/angular-sanitize.js"></script>
+    <script typ="text/javascript" src="vendor/js/underscore.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="app/js/app.js"></script>
-<script type="text/javascript" src="app/js/bootstrap.js"></script>
-<script type="text/javascript" src="app/js/router.js"></script>
+    <script type="text/javascript" src="app/js/app.js"></script>
+    <script type="text/javascript" src="app/js/bootstrap.js"></script>
+    <script type="text/javascript" src="app/js/router.js"></script>
 
-<script type="text/javascript" src="app/js/controllers/main.js"></script>
-<script type="text/javascript" src="app/js/directives/Scrollposition.js"></script>
-<script type="text/javascript" src="app/js/service/ContentService.js"></script>
+    <script type="text/javascript" src="app/js/controllers/main.js"></script>
+    <script type="text/javascript" src="app/js/directives/Scrollposition.js"></script>
+    <script type="text/javascript" src="app/js/service/ContentService.js"></script>
 </body>
+
 </html>
