@@ -346,7 +346,7 @@ angular.module('app')
             }
         ];
         var me = {
-            name: 'Paul Hindenberg', jobTitle: 'SPA Developer & Consultant', email: 'info.hindenberg@gmail.com', imgUrl: 'app/img/mainpic-v2.png', logoUrl: 'app/img/logo_big.png',
+            name: 'Paul Hindenberg', jobTitle: 'SPA Developer & Consultant', email: 'contact.hindenberg@gmail.com', imgUrl: 'app/img/mainpic-v2.png', logoUrl: 'app/img/logo_big.png',
             welcomeTxt: "Hello and welcome,\n\n I'm Paul and currently living between between Cologne and Bonn where I'm employed at Gambit Consulting. \n "
                 + "Here I'm working mostly as an ( not only :) ) SAP developer as well as technical Consultant on various projects. "
                 + "Before getting here I was studying Information Management and Consulting (MSc.) in Ludwigshafen am Rhein, University of Applied Science, based in Germany. "
